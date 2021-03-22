@@ -28,7 +28,7 @@ class ImageUploadHelper(object):
         else:
             return None
 
-if __name__ == '__main__':
+def main():
     st.title("""
         A Face Detector Project 
     """)
@@ -55,3 +55,6 @@ if __name__ == '__main__':
         cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
     st.image(image, caption="Image", channels='BGR')
+
+if __name__ == '__main__':
+    main()
